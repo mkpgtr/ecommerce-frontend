@@ -1,0 +1,164 @@
+body{
+    background: rgba(0,0,0,0.8);
+}
+
+
+header{
+    position: sticky;
+    top:0;
+    z-index:99;
+}
+
+
+/* ! item-price */
+
+.item-price{
+    color:black;
+    font-weight: bold;
+    font-family: 'Clash Display';
+}
+
+/* ! utility classes */
+
+.margin-right-0{
+    margin-right: 0;
+}
+
+
+
+.men-products{
+
+    /* background: rgba(170, 92, 52, 0.916); */
+}
+
+
+
+
+
+.men-products.products .section-title{
+    color:rgba(170, 92, 52, 0.916) !important;
+    font-size: 5rem;
+}
+
+.container-fluid{
+    /* padding:3rem 0rem; */
+}
+
+
+
+
+.single-product .card{
+    height: 36rem;
+}
+
+
+.single-product .card img{
+    height: 19rem;
+    width: 100%;
+    object-fit: contain;
+    background: linear-gradient(45deg,aliceblue,rgba(0,0,0,0.4),aliceblue,aliceblue,rgba(0,0,0,0.5));
+    /* object-position: 2rem 0rem; */
+}
+.single-product .card{
+    width: 17rem;
+}
+
+.single-product .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.single-product .card .card-body .item-price{
+    color:rgba(33, 32, 31, 0.999);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.single-product .card .card-body .card-title{
+    text-align: center;
+    font-family: "Striper", sans-serif;
+    color:rgba(41, 40, 40, 0.999);
+    font-weight: bold;
+    max-height: 4rem;
+    overflow: hidden;
+  
+}
+.single-product .card .card-body .card-text{
+    
+    text-align: center;
+    font-family: 'Technor', sans-serif;
+    color:rgba(17, 17, 17, 0.9);
+    max-height: 5rem;
+}
+
+/* ! section title of products */
+
+.men-products.products .section-title,.men-products.products .section-title,.men-products.products .section-title, .men-products.products .section-title{
+    font-family: 'Teko', sans-serif;
+    color:lightgoldenrodyellow;
+    font-size: 5rem;
+}
+
+
+/* ! men product card background */
+
+.men-products.products .single-product .card, .men-products.products .single-product .card,.men-products.products .single-product .card {
+    background-color: rgb(250, 253, 255);
+    box-shadow: 2px 3px 14px 5px black;
+    border:none;
+}
+
+/* ! card btn-primary aka add to cart */
+.card .btn-primary{
+    background: rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+/* ! pants container */
+
+.container.products{
+    padding : 3rem 0;
+}
+
+@media(max-width:768px){
+    .products.container{
+        width:80% !important;
+    }
+
+    .products.container .row .single-product{
+        margin-top: 2rem;
+    }
+}
+
+@media(min-width:768px){
+    .products .card-text{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+
+
+@media(min-width:992px){
+    .card .btn-primary{
+        font-size: 1rem;
+        width: 80% !important;
+    }
+
+    
+    .card .card-title{
+        font-size: 1rem;
+    }
+
+    .card .card-text{
+        font-size: 0.8rem;
+    }
+}
+

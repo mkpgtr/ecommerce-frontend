@@ -1,0 +1,10 @@
+.single-product-img-container{
+}
+
+@media(min-width:960px){
+    .product-name{
+        font-size: 1.9rem;
+        color:red;
+        font-weight: bold;
+    }
+}

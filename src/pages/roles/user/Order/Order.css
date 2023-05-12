@@ -1,0 +1,23 @@
+.custom-accordion{
+    background-color: rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+}
+.custom-accordion .accordion-button{
+    
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
+    color:rgba(170, 92, 52, 0.916);
+
+}
+
+.product-name-in-accordion{
+    font-size: 1.4rem;
+}
+
+a{
+    color:lightgoldenrodyellow;
+}
+
+.product-category-in-accordion{
+    border: 1px solid lightgoldenrodyellow;
+}

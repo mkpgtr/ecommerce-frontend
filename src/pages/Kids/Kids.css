@@ -1,0 +1,232 @@
+body{
+    background: rgba(0,0,0,0.8);
+}
+
+
+
+nav .container-fluid {
+    padding:0rem 0rem;
+
+}
+
+/* ! item-price */
+
+.item-price, .sale .item-price, .sale .discount-price{
+    color:black;
+    font-weight: bold;
+    font-family: 'Clash Display';
+}
+
+
+/* ! utility classes */
+
+.margin-right-0{
+    margin-right: 0;
+}
+
+
+
+.products{
+    background:none;
+}
+
+.men-products.dresses{
+    background-color:#fff;
+    
+}
+
+.men-products.pants{
+    color:white;
+    
+}
+.men-products.pants .section-title{
+    color:lightgoldenrodyellow;
+}
+
+.container-fluid{
+    padding:3rem 0rem;
+}
+
+
+
+
+.single-product .card{
+    height: 36rem;
+}
+
+
+.single-product .card img{
+    height: 19rem;
+    width: 100%;
+    object-fit: contain;
+    background: linear-gradient(45deg,aliceblue,rgba(0,0,0,0.4),aliceblue,aliceblue,rgba(0,0,0,0.5));
+    /* object-position: 2rem 0rem; */
+}
+.single-product .card{
+    width: 17rem;
+}
+
+.single-product .card .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.single-product .card .card-body .item-price{
+    color:rgba(170, 92, 52, 0.916);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.single-product .card .card-body .card-title{
+    text-align: center;
+    font-family: "Striper", sans-serif;
+    color:rgba(41, 40, 40, 0.999);
+    font-weight: bold;
+    max-height:3rem;
+    /* overflow-y:auto; */
+    color: rgba(170, 92, 52, 0.916);
+}
+.single-product .card .card-body .card-text{
+    
+    text-align: center;
+    color: black;
+    font-family: 'Clash Display';
+    font-weight: 500;
+}
+
+/* ! section title of products */
+
+.kids-products .section-title, .men-products.dresses .section-title,.men-products.pants .section-title,.men-products.shirts .section-title,.men-products.hoodies .section-title .men-products.pants .section-title{
+    font-family: 'Teko', sans-serif;
+    color:rgb(14, 14, 1);
+    font-size: 3rem;
+}
+
+
+
+/* ! men product card background */
+
+.men-products.dresses .single-product .card, .men-products.pants .single-product .card,.men-products.shirts .single-product .card {
+    background-color: rgb(250, 253, 255);
+    box-shadow: 2px 3px 14px 5px black;
+    border:none;
+}
+
+/* ! card btn-primary aka add to cart */
+.card .btn-primary{
+    background: rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+}
+
+
+/* ! pants container */
+
+.container.pants{
+    padding : 3rem 0;
+}
+
+
+
+
+
+/* ! sale functionality */
+
+/* ! by default hide the .discount-price element. all discount-price elements within the card will be hidden by default */
+
+.card .discount-price{
+    display: none;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+/* ! only when we add a sale class to the card, will we be able to see the effects of a discount */
+/* ! i am very happy i was able to come up with this idea. just adding a sale class will now give a discount effect */
+
+.card.sale .discount-price{
+    position: absolute;
+    display: block;
+    right:3rem;
+    font-size: 1.7rem;
+    top:0.8rem;
+    font-weight: bold;
+}
+
+/* ! card body positioning class */
+
+.sale .card-body-positioning-class{
+    position: relative;
+}
+
+/* ! strike through original price */
+
+.sale .item-price{
+    text-decoration: 2px line-through black;
+    font-weight: normal !important;
+}
+
+/* ! card sale tag will be hidden by default */
+
+.card .sale-tag{
+    display: none;
+}
+
+/* ! sale tag */
+
+.sale .sale-tag{
+    position: absolute;
+    display: block;
+    right:-2rem;
+    rotate: -45deg;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    background: red;
+    color:white;
+    padding:0 2rem;
+}
+
+
+
+/* ! card-column class | this is the class where the sale tag will be positioned relative to */
+
+.sale-season{
+    position: relative;
+}
+
+
+
+
+/* ! footer styles */
+
+footer .card ul {
+    min-height: 10rem;
+    background: lightgoldenrodyellow;
+}
+
+footer  h4.card-header{
+    background-color:lightgoldenrodyellow;
+    color:rgba(170, 92, 52, 0.916);
+    font-family: 'Clash Display';
+}
+
+
+
+@media(max-width:768px){
+    .card-img-top{
+     
+    }
+    .products.container{
+        width:80% !important;
+    }
+
+    .products.container .row .single-product{
+        margin-top: 2rem;
+    }
+}
+
+
+.btn-primary:hover{
+    color:white !important;
+    background-color: orange !important;
+}

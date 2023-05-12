@@ -1,0 +1,181 @@
+/* ! width 100% will fit the image into the .col-lg-6 div */
+
+
+
+/* ! background */
+
+body{
+    color: rgba(170, 92, 52, 0.916);
+    background-color: lightgoldenrodyellow !important;
+}
+
+
+
+.contact-form-picture img{
+    width:70%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: 0 -13rem;
+}
+
+
+
+.contact-form-picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 34rem;
+    padding:0;
+    overflow-y: hidden;
+}
+
+
+
+form#form label{
+    font-size: 2rem;
+    color:rgba(170, 92, 52, 0.916);
+    font-family: 'Clash Display';
+    text-shadow: 2px 1px 10px black;
+}
+input,textarea{
+    font-size: 1.5rem;
+    transition: 0.2s all linear;
+    padding-left: 2rem;
+}
+
+
+form#form input, form#form textarea{
+    box-shadow: 2px 3px 4px 5px black;
+}
+
+form#form button{
+    font-size: 2.4rem;
+    width: 100%;
+    /* ! aligns at center */
+    margin: 2.1rem auto;
+    border-radius: 20px;
+    font-variant: small-caps;
+    background-color: rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    transition: all 0.3s linear;
+    padding:0;
+
+}
+form#form button:hover{
+    letter-spacing: 3px;
+    color:lightgoldenrodyellow;
+    text-shadow: 1px 6px grey;
+}
+
+
+.contact-title{
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 1px 6px grey;
+    
+    padding:1rem;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+
+@media(max-width:768px){
+
+    .contact-form-picture img{
+        
+        object-position: 0 0rem;
+        margin-top: 3rem;
+    }
+    form#form{
+        margin: 0rem auto; 
+        border:2px solid black;
+    }
+    form input,label,textarea{
+        width:70%;
+        /* ! common centering technique */
+        margin: 0 auto;
+    }
+    form label{
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    
+
+    form button{
+        width:75% !important;
+    }
+
+}
+
+@media(min-width:768px){
+    .contact-form-picture img{
+        
+        object-position: -6rem -1.5rem;
+        margin-top: 4rem;
+    }
+    form#form{
+        margin-top: 2rem;
+    }
+    form#form label{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(min-width:962px){
+    .contact-form-picture img{
+        
+        object-position: -6rem 0rem;
+        margin-top: 3rem;
+    }
+
+    footer{
+        border: 3px solid black;
+    }
+  
+    form#form{
+        margin-top: 2rem;
+    }
+
+    form#form label{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+    }
+    .footer-kids.card ul{
+        min-height: 12rem;
+    }
+}
+
+@media (min-width:1200px){
+
+    .contact-form-picture img{
+        
+        object-position: 0 0rem;
+        margin-top: 1rem;
+    }
+   
+
+    .form-n-picture-container{
+        /* border:2px solid white; */
+        padding:0;
+        margin-top: 0;
+    }
+    form#form{
+        margin-top: 0rem;
+    }
+
+    .contact-title{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+
+   
+    form#form label{
+        font-size: 2rem !important;
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,481 @@
+
+/* ! cart page background */
+
+body{
+    background-color: lightgoldenrodyellow;
+    color: rgba(170, 92, 52, 0.916);
+}
+
+
+
+
+
+/* ! remove arrows from number input box. copied from w3schools */
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.cart-item{
+    max-height: 20rem;
+    background-color: rgba(170, 92, 52, 0.916);
+}
+
+.cart-item .item-name, .cart-item .item-price{
+    color:lightgoldenrodyellow;
+    text-align: center;
+}
+
+.cart-item span.plus, .cart-item span.minus, .increase-decrease-input-box{
+    background-color: lightgoldenrodyellow;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+
+.cart-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.cart-item .col-4{
+
+    max-height: 13rem;
+}
+
+.summary{
+    max-height: 20rem;
+    position: sticky;
+    top:8rem;
+}
+
+
+/* ! checkout btn */
+
+.checkout-btn{
+    border :1px solid black;
+    width:50%;
+    display: block;
+    margin:1rem auto;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: 0.3s all linear;
+}
+.checkout-btn:hover{
+ cursor: pointer;
+
+}
+
+/* !cart left side middle section */
+
+.middle-section .item-name{
+    font-size: 1.4rem;
+}
+.middle-section .item-price{
+    font-size: 1.4rem;
+}
+
+
+
+/* ! increase decrease input */
+
+.increase-decrease input{
+width:4rem;
+}
+.increase-decrease span{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: beige;
+    border:1px solid black;
+    width:3rem;
+}
+.increase-decrease span:hover{
+    cursor: pointer;
+    background-color: blanchedalmond;
+
+}
+
+
+/* ! plus minus btns */
+
+span.plus,span.minus{
+    background-color: rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    font-weight: bold;
+    
+}
+
+/* @media(max-width:968px){
+    .checkout-btn{
+        font-size: 1rem;
+    }
+} */
+
+@media(max-width:768px){
+    .middle-section .delete-icon{
+        font-size: 1rem;
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        border-radius: 50%;
+    }
+    .section-title{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 2.9rem;
+        font-weight: bold;
+
+    }
+    .increase-decrease{
+        margin-bottom: 1rem;
+        flex-direction: row-reverse;
+        /* gap:1rem */
+        justify-content: space-around;
+        gap:0.3rem;
+
+    }
+    .increase-decrease-input-box{
+        text-align: center;
+        width:30% !important;
+    }
+    span.cost-text,span.cost-number{
+        font-size: 2.4rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    
+    }
+    
+    span.shipping-text,span.shipping-price{
+        font-size: 2rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .cost-n-shipping .shipping{
+        justify-content: space-between !important;
+    }
+
+    .cost-n-shipping .cost{
+        justify-content: space-between !important;
+    }
+    
+    span.total.checkout-text,span.checkout-total-price{
+        font-size: 2.5rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    .checkout-btn{
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        /* ! setting the font size in percentage helped me to stop the text from overflowing in smaller devices */
+        /* ! the text in the button will have the set percentage of its parent i.e. button and will always be relative to that button */
+        /* ! this helps to keep the font-size in relation to the button size */
+        font-size: 1.5rem;
+        z-index: 99;
+        font-variant: small-caps;
+        padding:0.5rem;
+        font-weight: bold;
+    }
+    /* ! increase max height because the checkout btn was not visible */
+
+    .summary{
+        max-height: 30rem;
+    }
+
+
+}
+
+@media(min-width:768px){
+
+    
+
+    .middle-section{
+        margin-bottom: 4rem;
+    }
+    
+    .increase-decrease{
+        margin-bottom: 4rem;
+
+    }
+
+    .middle-section .item-name{
+        font-size: 1rem;
+        font-family: 'Satoshi'
+    }
+    .middle-section .item-price{
+        
+        font-family: 'Satoshi';
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        
+    }
+    .middle-section .delete-icon{
+        font-size: 1rem;
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        border-radius: 50%;
+    }
+    .section-title{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+    }
+
+   
+
+   
+    
+
+    
+
+    .increase-decrease-input-box{
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+
+    span.plus, span.minus{
+        font-size: 1rem;
+    }
+
+    /* ! summary section on large devices */
+    span.cost-text,span.cost-number{
+        font-size: 1.4rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.shipping-text,span.shipping-price{
+        font-size: 1rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.total.checkout-text,span.checkout-total-price{
+        font-size: 1.5rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+
+    .checkout-btn{
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        /* ! setting the font size in percentage helped me to stop the text from overflowing in smaller devices */
+        /* ! the text in the button will have the set percentage of its parent i.e. button and will always be relative to that button */
+        /* ! this helps to keep the font-size in relation to the button size */
+        font-size: 80%;
+        font-variant: small-caps;
+        padding:0.5rem;
+        font-weight: bold;
+    }
+
+    .cart .summary{
+        border:3px solid blue;
+    }
+
+    /* ! cart item max height change to make the item smaller in small devices */
+    
+
+    .cart-item{
+        max-height: 8rem;
+    }
+
+    .cart-item img{
+        height: 60%;
+        margin-top: 0.2rem;
+    }
+
+    
+
+
+   
+}
+
+
+@media(min-width:992px){
+    .cart-item{
+        max-height: 13rem;
+    }
+
+    .cart-item img{
+        height: 13rem;
+    }
+   
+
+    .middle-section .item-name{
+        font-size: 1.1rem;
+        font-family: 'Satoshi'
+    }
+    .middle-section .item-price{
+        
+        font-family: 'Satoshi';
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        
+    }
+    .middle-section .delete-icon{
+        font-size: 1.4rem;
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        padding:1rem;
+        border-radius: 50%;
+    }
+    .section-title{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+
+    }
+
+    
+
+   
+    
+
+    
+
+    .increase-decrease-input-box{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+
+    span.plus, span.minus{
+        font-size: 2rem;
+    }
+
+    /* ! summary section on large devices */
+    span.cost-text,span.cost-number{
+        font-size: 2rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.shipping-text,span.shipping-price{
+        font-size: 1.3rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.total.checkout-text,span.checkout-total-price{
+        font-size: 2.3rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+
+    .checkout-btn{
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        /* ! setting the font size in percentage helped me to stop the text from overflowing in smaller devices */
+        /* ! the text in the button will have the set percentage of its parent i.e. button and will always be relative to that button */
+        /* ! this helps to keep the font-size in relation to the button size */
+        font-size: 120%;
+        font-variant: small-caps;
+        padding:0.5rem;
+        font-weight: bold;
+    }
+
+    .cart .summary{
+        border:3px solid blue;
+    }
+   
+}
+
+
+
+@media(min-width:1200px){
+
+    .middle-section .item-name{
+        font-size: 1.5rem;
+        font-family: 'Satoshi'
+    }
+    .middle-section .item-price{
+        
+        font-family: 'Satoshi';
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        
+    }
+    .middle-section .delete-icon{
+        font-size: 1.4rem;
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        padding:1rem;
+        border-radius: 50%;
+    }
+    .section-title{
+        font-family: 'Clash Display', sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+       
+
+    }
+
+    .increase-decrease-input-box{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+
+    span.plus, span.minus{
+        font-size: 2rem;
+    }
+
+    /* ! summary section on large devices */
+    span.cost-text,span.cost-number{
+        font-size: 2rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.shipping-text,span.shipping-price{
+        font-size: 1.3rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+    
+    span.total.checkout-text,span.checkout-total-price{
+        font-size: 2.3rem;
+        font-family: 'Clash Display';
+        font-weight: bold;
+    }
+
+    .checkout-btn{
+        background-color: rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        /* ! setting the font size in percentage helped me to stop the text from overflowing in smaller devices */
+        /* ! the text in the button will have the set percentage of its parent i.e. button and will always be relative to that button */
+        /* ! this helps to keep the font-size in relation to the button size */
+        font-size: 120%;
+        font-variant: small-caps;
+        padding:0.5rem;
+        font-weight: bold;
+    }
+
+    .cart .summary{
+        border:3px solid blue;
+    }
+   
+}
+
+.btn-primary:hover, .checkout-btn:hover{
+    color:white !important;
+    background-color: orange !important;
+}

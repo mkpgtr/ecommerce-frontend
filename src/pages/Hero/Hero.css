@@ -1,0 +1,694 @@
+body{
+    /* background-color: #EAE0CC; */
+    /* background-color: lightgoldenrodyellow; */
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index:99;
+}
+
+
+/* ! item price of featured section */
+
+
+.featured .item-price{
+    color:black;
+    font-weight: bold;
+    font-family: 'Clash Display';
+}
+/* ! remove default card bottom border  */
+
+.card{
+    --bs-card-border-width:0;
+}
+
+/* ! dropdown styles */
+
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background: lightgoldenrodyellow;
+    color:black !important;
+    font-family: 'Clash Display';
+    font-weight: bold;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+/* ! navbar styles */
+
+.navbar-brand{
+    font-size: 2rem;
+    /* !apply margin right to cart and login button in the navbar */
+    margin-left: 3.5%;
+    font-family: 'Striper',sans-serif;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+.navbar-nav .nav-item{
+    font-size: 1.4rem;
+    font-family: 'Striper';
+    
+}
+.navbar-nav .nav-item a.nav-link{
+    color:rgba(170, 92, 52, 0.916);
+    
+}
+
+.cart-n-loginbtn{
+    /* !apply margin left to navbar brand */
+    margin-right: 6%;
+}
+
+
+.nav-search .search-btn, .cart-n-loginbtn .btn.btn-primary {
+    background-color:rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    font-variant: small-caps;
+    font-size: 1.4rem;
+    border:3px double lightgoldenrodyellow;
+}
+
+.nav-search .search-input{
+    font-size: 1.4rem;
+    background-color: lightgoldenrodyellow;
+    border:3px double rgba(170, 92, 52, 0.916);
+}
+.second-nav .container-fluid{
+    background-color: rgba(170, 92, 52, 0.916);
+}
+.second-nav .container-fluid .nav-item a{
+    color:lightgoldenrodyellow;
+
+}
+
+
+.first-nav .container-fluid{
+    background-color: #EAE0CC;
+    padding-top:0;
+    background-color: lightgoldenrodyellow;
+}
+
+/* ! remove padding to remove the white-areas on the navbar */
+.navbar{
+    padding:0;
+}
+
+
+
+
+.first-nav{
+    background-color: lightgoldenrodyellow;
+}
+
+.nav-search{
+    justify-content: center;
+    gap:0;
+}
+
+
+.nav-search, .search-input{
+    align-items: center;
+    /* border:2px solid black; */
+    border-bottom-left-radius: 20px;
+}
+
+.nav-search,.nav-search .search-btn{
+    
+    border-top-right-radius: 20px;
+}
+
+
+
+
+/* ! */
+
+/* ! customizing the background of list-group */
+
+.list-group{
+    --bs-list-group-bg:lightgoldenrodyellow;
+    --bs-list-group-color: rgba(170, 92, 52, 0.916);
+}
+
+.card .list-group-item{
+    border-bottom: 0;
+}
+
+footer{
+    background-color:lightgoldenrodyellow;
+    font-family: 'Clash Display';
+}
+
+.card{
+    border:0;
+}
+
+footer  h4.card-header{
+    background-color:lightgoldenrodyellow;
+    color:rgba(170, 92, 52, 0.916);
+    font-family: 'Clash Display';
+}
+
+
+/* ! featured section */
+
+section.featured{
+    background-color:rgba(0,0,0,0.8);
+    color:lightgoldenrodyellow;
+}
+
+/* ! carousel item */
+
+.carousel-item{
+    height:38rem;
+    position: relative;
+}
+
+/* ! when the screen is large */
+
+.container.four-item-slide{
+    position: absolute;
+    top:2rem;
+    left:5%;
+    right:5%;
+}
+
+/* ! when the screen is medium */
+
+.container.two-item-slide{
+    position: absolute;
+    top:1rem;
+    left:3rem;
+    right:3rem;
+
+}
+
+
+
+.container.two-item-slide .card{
+    height:29rem;
+}
+
+
+.container.four-item-slide .card .card-body{
+    background-color: lightgoldenrodyellow !important;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+/* ! when the screen is small */
+.container.one-item-slide{
+    position: absolute;
+    top:3rem;
+    left: 0rem;
+    right: 0rem;
+}
+
+/* ! carousel */
+.carousel{
+   background-color: rgb(250, 253, 255);;
+}
+
+
+/* ! carousel previous button */
+
+
+
+.carousel-control-prev-icon{
+    position: absolute;
+    left:0rem;
+    background-color: black;
+    color:white;
+    width:3rem;
+    height:3rem;
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right:1rem;
+    background-color: black;
+    color:white;
+    width:3rem;
+    height:3rem;
+}
+
+/* ! carousel item card with box-shadow */
+
+.carousel .carousel-item .card {
+    background-color: lightgoldenrodyellow;
+    color:rgba(170, 92, 52, 0.916);
+    box-shadow: 2px 3px 14px 5px black;
+}
+
+
+
+/* ! carousel item card body */
+
+.carousel .carousel-item .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ! featured section title*/
+
+.featured h4{
+    font-size: 4rem;
+    text-transform: capitalize;
+    /* font-variant:small-caps; */
+    font-family: 'Clash Display';
+    text-shadow: 2px 10px 3px rgba(20, 20, 20, 0.916);
+    letter-spacing: 5px;
+    padding:1rem 0;
+}
+
+/* ! single product image */
+.carousel-item .card {
+    /* padding:2rem; */
+}
+
+.carousel-item .card img{
+    height:16rem;
+    /* object-position: 0rem -8rem; */
+    object-fit:contain;
+    background: lightgoldenrodyellow;
+    
+    
+    
+}
+.carousel-item .card .card-title{
+    font-family: 'Striper';
+}
+.carousel-item .card .card-text{
+    font-family: 'Clash Display';
+    font-size: 0.8rem;
+    text-shadow: 2px 4px 9px rgba(0,0,0,0.5);
+    font-weight: 500;
+   
+}
+
+
+
+
+/* ! hero section styles */
+
+
+.hero{
+    background: url('https://images.pexels.com/photos/5864245/pexels-photo-5864245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:39.5rem;
+    padding:0 !important;
+}
+.hero .overlay{
+    background: rgba(0,0,0,0.5);
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* ! name and slogan container */
+
+.name-n-slogan-container{
+    height:24rem;
+    display: flex;
+    color:lightgoldenrodyellow;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+}
+
+/* ! crown icon */
+.name-n-slogan-container i{
+    font-size: 6rem;
+    border: 3px solid lightgoldenrodyellow;
+    padding:2rem;
+    
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.7);
+    transition: 1s all linear;
+    animation-name:glow; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* ! css animation */
+
+@keyframes glow{
+
+    
+    0% {
+        box-shadow: 0px 0px 190px 0px lightgoldenrodyellow;
+    }
+    
+    15%{
+        box-shadow: 0px 0px 190px 80px lightgoldenrodyellow;
+        
+    }
+    
+    20%{
+        box-shadow: 0px 0px 190px 80px lightgoldenrodyellow;
+
+    }
+    
+    25%{
+        box-shadow: 0px 0px 190px 80px lightgoldenrodyellow;
+        
+    }
+    50%{
+        box-shadow: 0px 0px 190px 80px lightgoldenrodyellow;
+        
+    }
+    75%{
+        
+        box-shadow: 0px 0px 190px 0px lightgoldenrodyellow;
+    }
+    100%{
+        box-shadow: 0px 0px 190px 0px lightgoldenrodyellow;
+        /* ! spin anti clockwise at the end with -360deg */
+        /* rotate: 360deg; */
+        
+    }
+    
+   
+}
+
+
+.name-n-slogan-container .slogan{
+    font-size: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-variant: small-caps;
+    transition: 0.5s all linear;
+}
+.name-n-slogan-container .name{
+    font-family: 'striper',sans-serif;
+    font-size: 6rem;
+    /* font-weight: bold; */
+    transition: 0.2s all linear;
+}
+
+.name-n-slogan-container i:hover {
+    cursor: pointer;
+    scale:1.1;
+}
+
+.name-n-slogan-container i:hover + .name {
+    text-shadow: 23px 28px 14px black;
+    letter-spacing: 6px;
+}
+
+/* ! card btn primary */
+
+.card .btn-primary{
+    background-color:rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    font-variant: small-caps;
+   
+    border:3px double lightgoldenrodyellow;
+}
+
+
+/* ! footer card */
+/* ! to make the design given in the assignment. Leaving kids section empty was causing the heading to come to the center */
+/* ! to tackle this, I have sent a minimum height to every unordered list inside the card. this will ensure that no matter what */
+/* ! a minimum of 10rem will always be there */
+footer .card ul {
+    min-height: 10rem;
+    background: lightgoldenrodyellow;
+}
+
+
+
+@media(max-width:768px){
+    /*  */
+    .carousel-item .card img{
+        height:16rem;
+        
+        /* ! displays a certain portion of the picture. 0rem -12rem hides the face and shows from the neck */
+        /* object-position: 0rem -14rem; */
+        object-fit:contain;
+        
+        
+    }
+    .carousel-item .card{
+        width:80% !important;
+        margin:0 auto;
+    }
+
+    .featured h4{
+        font-size: 3rem;
+        padding:0;
+    }
+
+    
+    .carousel-item .card .card-body{
+        background-color: lightgoldenrodyellow;
+        color:black;
+    }
+    .carousel-item .card .card-text{
+        font-size: 1rem;
+        max-width: 80%;
+
+    }
+
+    .name-n-slogan-container {
+        /* border: 5px solid white; */
+        margin-bottom: 6rem;
+    }
+
+    .name-n-slogan-container .slogan{
+        font-size: 1.3rem;
+    }
+    .name-n-slogan-container .name{
+        font-size: 4rem;
+    }
+    .name-n-slogan-container i{
+        font-size: 3rem;
+    }
+
+    footer .card ul {
+        min-height: 0rem;
+        background: lightgoldenrodyellow;
+    }
+    
+
+}
+
+@media(min-width:768px){
+
+    footer .card ul {
+        min-height: 0rem;
+        background: lightgoldenrodyellow;
+    }
+    /* !increase navbar logo size after 1024px */
+    .navbar-brand{
+        font-size: 2.8rem;
+        /* !apply margin right to cart and login button in the navbar */
+        margin-left: 5.5%;
+        font-family: 'Striper',sans-serif;
+        /* font-weight: 800; */
+        color:rgba(170, 92, 52, 0.916);
+    }
+    
+    .navbar-nav .nav-item{
+        font-size: 1.4rem;
+        font-family: 'Striper';
+        
+    }
+    .navbar-nav .nav-item a.nav-link{
+        color:rgba(170, 92, 52, 0.916);
+        
+    }
+
+    .cart-n-loginbtn{
+        /* !apply margin left to navbar brand */
+        margin-right: 6%;
+    }
+   
+
+    .nav-search .search-btn, .cart-n-loginbtn .btn.btn-primary {
+        background-color:rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        font-variant: small-caps;
+        font-size: 1.4rem;
+        border:3px double lightgoldenrodyellow;
+    }
+
+    /* ! card styles after 768px */
+
+    .featured .card{
+        min-height: 34rem;
+        max-height: 34rem;
+    }
+
+    .featured .card .card-body{
+        flex-direction: column;
+        justify-content: space-around;
+        color:black !important;
+        
+    }
+
+  
+    .featured .card .card-text{
+        font-size: 1rem !important;
+    }
+
+    .nav-search .search-input{
+        font-size: 1.4rem;
+        background-color: lightgoldenrodyellow;
+        border:3px double rgba(170, 92, 52, 0.916);
+    }
+    .second-nav .container-fluid{
+        background-color: rgba(170, 92, 52, 0.916);
+    }
+    .second-nav .container-fluid .nav-item a{
+        color:lightgoldenrodyellow;
+
+    }
+
+    .card .list-group-item{
+        font-size: 1.3rem;
+    }
+
+    /* ! dropdown menu styles on large devices */
+
+    .dropdown-menu{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* ! search input on large screen */
+
+   
+
+}
+
+
+
+@media(min-width:992px){
+
+    /* !increase navbar logo size after 1024px */
+    .navbar-brand{
+        font-size: 3rem;
+        /* !apply margin right to cart and login button in the navbar */
+        margin-left: 5.5%;
+        font-family: 'Striper',sans-serif;
+        font-weight: 800;
+        color:rgba(170, 92, 52, 0.916);
+    }
+    
+    .navbar-nav .nav-item{
+        font-size: 1.4rem;
+        font-family: 'Striper';
+        
+    }
+    .navbar-nav .nav-item a.nav-link{
+        color:rgba(170, 92, 52, 0.916);
+        
+    }
+
+    .cart-n-loginbtn{
+        /* !apply margin left to navbar brand */
+        margin-right: 6%;
+    }
+   
+
+    .nav-search .search-btn, .cart-n-loginbtn .btn.btn-primary {
+        background-color:rgba(170, 92, 52, 0.916);
+        color:lightgoldenrodyellow;
+        font-variant: small-caps;
+        font-size: 1.4rem;
+        border:3px double lightgoldenrodyellow;
+    }
+
+    .nav-search .search-input{
+        font-size: 1.4rem;
+        background-color: lightgoldenrodyellow;
+        border:3px double rgba(170, 92, 52, 0.916);
+    }
+    .second-nav .container-fluid{
+        background-color: rgba(170, 92, 52, 0.916);
+    }
+    .second-nav .container-fluid .nav-item a{
+        color:lightgoldenrodyellow;
+
+    }
+
+    .card .list-group-item{
+        font-size: 1.3rem;
+    }
+
+    /* ! dropdown menu styles on large devices */
+
+    .dropdown-menu{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* ! search input on large screen */
+
+    .card .btn-primary{
+        font-size: 1rem;
+        width: 80% !important;
+    }
+
+    
+    .card .card-title{
+        font-size: 1rem;
+        color:black;
+    }
+
+    .card .card-text{
+        font-size: 0.8rem !important;
+    }
+
+    .footer-kids.card ul{
+        min-height: 12rem;
+    }
+   
+
+}
+
+@media (min-width:1200px){
+    .search-input{
+        width: 34rem;
+    }
+    .nav-search{
+        margin-right: 5%;
+    }
+
+    
+}
+
+/* ! footer anchor tag refactor */
+
+footer a{
+    text-decoration: none;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+/* ! copyright */
+
+.copyright-row .copyright-col span{
+    color:rgba(170, 92, 52, 0.916);
+}
+
+
+
+/* ! generalizing the hover styles forcefully */
+
+.btn-primary:hover{
+    color:white !important;
+    background-color: orange !important;
+}
